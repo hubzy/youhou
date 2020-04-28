@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* 全局 */
+#design{
+	font:12px/1.5 "Microsoft YaHei",Tahoma,Arial,宋体;
+	width: 360px;
+}
+#business{
+	min-height: 160px;
+	display: none;
+}
+
+#navigation{
+	display: none;
+	font-size: 12px;
+	text-align: center;
+	border-top:1px #ccc solid;
+	padding: 10px 0;
+}
+
+#design_background{
+	width: 900px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#design-login,#design-register{
+	width: 450px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#design-popup-login{
+	padding: 20px 5px;
+	padding-bottom: 0;
+	display: none;
+}
+
+.layui-carousel{
+	margin:5px;
+}
+
+.design-public{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 898px;
+	height: 558px;
+	background: #fff;
+	z-index: 100;
+}
+
+.design-h1 {
+    margin-bottom: 20px;
+    line-height: 60px;
+    padding-bottom: 10px;
+    color: #393D49;
+    border-bottom: 1px solid #eee;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.layer-hide{display: none;}
+
+#design-auth{
+	height: 380px;
+	overflow-y: scroll;
+}
+
+#design-help a{height: 30px; line-height: 30px;}
+#design-kefu{ padding: 50px; text-align: center; }
+#design-recharge{ padding: 100px; text-align: center; }
+
+#design-version{ float: right; margin-right:20px; font-size: 14px; color: #ccc;}
+#design-edit,#design-exit,#design-qq{ float: right; margin-right:20px; font-size: 14px; color: #ccc;}
+#design-update{ margin-left: 10px; cursor: pointer;}
+
+#business_content{ padding: 10px 0; }
+#business_content p{ text-align: center; line-height: 22px; margin-bottom: 5px;}
+#business_content .layui-col-xs6{ margin-bottom: 5px; padding: 0 5px;}
+#business_content .layui-btn{ width: 100%; }
+/*#business_content .layui-badge{ position: absolute; top: -5px; right:-5px;}*/
+#design-register-code{text-align: right;}
+#design-register-email-code{text-align: right;}
+#design-register-email-code button{ width: 130px;}
