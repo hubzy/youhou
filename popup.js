@@ -20,17 +20,13 @@ $(function () {
 
 		}
 	});
-
-
-
 });
-
-
 
 //开启
 $('#design-login-btn').on('click', function () {
 	$("#design-login-btn").html("开启中···");
-	$("#design-login-btn").css("background-color","#c2c2c2");
+	$("#design-login-btn").css("background-color", "#c2c2c2");
+	$("#design-login-btn").attr("disabled","disabled");
 	$.getJSON(serverG, function (data) {
 		$.each(data, function (i, value) {
 			$.ajax({
@@ -44,33 +40,33 @@ $('#design-login-btn').on('click', function () {
 				},
 				success: function (result) {
 					console.log(result);
+					
 					if (!!result) {
-						
+
 						let token = 'PHPSESSID=' + result + ';chack=true';
 						chrome.storage.sync.set({ token: token }, function () {
-						layer.msg('上线');
-						window.location.reload();
-						
-						
+							layer.msg('上线');
+							window.location.reload();
+
 						})
 						
+
 					} else {
 						$("#smg").html("跑路啦")
-						$("#smg").css("color","red")
+						$("#smg").css("color", "red")
 					}
 				}
+				
 			});
 		});
 	})
 
 });
 
-
 $('.logout').click(function (e) {
 	e.preventDefault();
 	chrome.storage.sync.remove("token")
 	$('#design-popup-login').show();
-	$('#business').hide();
 	$('#navigation').hide();
 });
 
