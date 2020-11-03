@@ -31,6 +31,9 @@
             size: `+$('.editor-canvas').width()+`px `+$('.editor-canvas').height()+`px;
             margin: 0;
             }
+        body {
+                margin: 0;
+              }
         });`
 
             var prtStyle = document.createElement('style');
@@ -52,6 +55,7 @@
         })
 
     }, 1000)
+   
 
 
 
